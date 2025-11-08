@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Packard Classics Co.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html { scroll-behavior: smooth; font-family: 'Inter', sans-serif; }
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+        .packard-logo { font-family: 'Times New Roman', serif; letter-spacing: 1px; text-shadow: 1px 1px 2px rgba(0,0,0,0.1); }
+    </style>
+</head>
+<body class="bg-stone-100 text-zinc-800">
+
+    <!-- Header -->
+    <header id="navbar" class="fixed w-full top-0 z-50 bg-zinc-800 shadow-xl">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="#home" class="text-3xl font-bold text-amber-400 packard-logo">পরিবর্তন সুপার শপ</a>
+                
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link text-stone-300 hover:text-amber-400 font-medium" data-section="home">Heritage</a>
+                    <a href="#products" class="nav-link text-stone-300 hover:text-amber-400 font-medium" data-section="products">Catalog</a>
+                    <a href="#reviews" class="nav-link text-stone-300 hover:text-amber-400 font-medium" data-section="reviews">Testimonials</a>
+                    <a href="#contact" class="nav-link text-stone-300 hover:text-amber-400 font-medium" data-section="contact">Contact</a>
+                </nav>
+
+                <div class="flex items-center space-x-4">
+                    <div class="flex items-center space-x-2 bg-stone-700 text-amber-400 px-3 py-1 rounded-full text-sm font-semibold cursor-pointer">
+                        <span id="user-balance-display">1000 BDT</span>
+                        <button id="add-money-btn" class="text-green-400 hover:text-green-500 font-bold ml-1 text-base">+</button>
+                    </div>
+
+                    <button id="cart-icon" class="relative p-2 text-stone-300 hover:text-amber-400 text-2xl">
+                        <span>💼</span>
+                        <span id="cart-count" class="absolute top-0 right-0 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-red-100 transform translate-x-1/2 -translate-y-1/2 bg-red-600 rounded-full">0</span>
+                    </button>
+                </div>
+
+                <button id="mobile-menu-btn" class="md:hidden p-2 text-stone-300 hover:text-amber-400 text-2xl">☰</button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-zinc-700 shadow-xl">
+            <a href="#home" class="block py-2 px-4 text-sm text-stone-100 hover:bg-zinc-600">Heritage</a>
+            <a href="#products" class="block py-2 px-4 text-sm text-stone-100 hover:bg-zinc-600">Catalog</a>
+            <a href="#reviews" class="block py-2 px-4 text-sm text-stone-100 hover:bg-zinc-600">Testimonials</a>
+            <a href="#contact" class="block py-2 px-4 text-sm text-stone-100 hover:bg-zinc-600">Contact</a>
+        </div>
+    </header>
+
+    <main class="pt-16">
+        <!-- Home / Hero Banner -->
+<section id="home" class="relative bg-stone-900 text-stone-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 flex flex-col md:flex-row items-center justify-between">
+        <!-- Text -->
+        <div class="md:w-1/2 space-y-6">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-amber-400">পরিবর্তন</h1>
+            <p class="text-stone-200 text-lg md:text-xl">বাংলার রং, বাংলার গন্ধ, বাংলার শিল্প</p>
+            <div class="space-x-4">
+                <a href="#products" class="inline-block px-6 py-3 bg-amber-400 text-stone-900 font-semibold rounded hover:bg-amber-500 transition">আমাদের সংগ্রহ</a>
+                <a href="#contact" class="inline-block px-6 py-3 border border-amber-400 text-amber-400 font-semibold rounded hover:bg-amber-500 hover:text-stone-900 transition">আমাদের সাথে যোগাযোগ করুন</a>
+            </div>
+        </div>
+
+        <!-- Image -->
+        <div class="md:w-1/2 mt-10 md:mt-0">
+            <img src="bashmati.webp" alt="বাসমতী" class="rounded-xl shadow-2xl">
+        </div>
+    </div>
+</section>
+->
+    </main>
+
+</body>
+</html>
